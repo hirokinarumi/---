@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>情報基礎2最終課題</title>
+
+
+
+
+<body>
+
+<script type="text/javascript">
+<!--
+function digitalClock() {
+  var now = new Date();
+  document . getElementById( 'digital-clock' ) . innerHTML= now . toLocaleString();
+  window . setTimeout( "digitalClock()", 1000);
+}
+window . onload = digitalClock;
+// -->
+</script>
+
+<style type="text/css">
+<!--
+div#digital-clock {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  background: "#CCFFFF" url(earth.png) no-repeat center top;
+  text-align: center;
+  width: 500px;
+  padding: 40px 0 15px 0;
+  border: 2px "#CCFFFF" solid;
+}
+-->
+</style>
+
+
+
+
+
+<script language="javascript">
+//<![CDATA[
+document.bgColor="#CCFFFF";
+</script>
+
+
+<script type="text/javascript">
+<!--
+function digitalClock() {
+  var now = new Date();
+  document . getElementById( 'digital-clock' ) . innerHTML= now . toLocaleString();
+  window . setTimeout( "digitalClock()", 1000);
+}
+window . onload = digitalClock;
+// -->
+</script>
+
+
+<style type="text/css">
+<!--
+div#digital-clock {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  background: "#CCFFFF" url(earth.png) no-repeat center top;
+  text-align: center;
+  width: 500px;
+  padding: 40px 0 15px 0;
+  border: 2px "#CCFFFF" solid;
+}
+-->
+</style>
+
+
+
+
+
+
+  <script type="text/javascript">
+  window.onload = function () {
+    autoScroll();
+  }
+  var $scrollX = 0;
+  function autoScroll() {
+    var $sampleBox = document.getElementById( "sampleBox" );
+    $sampleBox.scrollLeft = ++$scrollX;
+    if( $scrollX < $sampleBox.scrollWidth - $sampleBox.clientWidth ){
+      setTimeout( "autoScroll()", 20 );
+    }else{
+      $scrollX = 0;
+      $sampleBox.scrollLeft = 0;
+      setTimeout( "autoScroll()", 20 );
+    }
+  }
+  </script>
+
+  <style>
+  #sampleBox {
+    width: 300px;
+    overflow: hidden;
+    background-color:"#CCFFFF" ;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 16px;
+    border: 1px solid "#CCFFFF";
+    border-radius: 10px;
+  }
+  #sampleText {
+    white-space: nowrap;
+    margin: 0 0 0 300px !important;
+    width: 700px;
+    text-align: left;
+  }
+  </style>
+
+  <div id="sampleBox">
+    <p id="sampleText">
+      早く起きれるように努力しましょう！
+    </p>
+  </div>
+
+
+  <center><b><font size=8>NarumiAlarm</b></font></center>
+  <p><center><div id="digital-clock"></div></center></p>
+  <center><p><u><font size=5><input type="button" value="時刻設定" oneclick="history.back()"></u></font></p></center>
+  <center><select name="time">
+    <option value="1">0:00</option>
+    <option value="2">0:10</option>
+    <option value="3">0:20</option>
+    <option value="4">0:30</option>
+    <option value="5">0:40</option>
+    <option value="6">0:50</option>
+    <option value="7">1:00</option>
+    <option value="8">1:10</option>
+    <option value="9">1:20</option>
+    <option value="10">1:30</option>
+    <option value="11">1:40</option>
+    <option value="12">1:50</option>
+    <option value="13">1:50</option>
+    <option value="14">2:00</option>
+    <option value="15">2:10</option>
+    <option value="16">2:20</option>
+    <option value="17">2:30</option>
+    <option value="18">2:40</option>
+    <option value="19">2:50</option>
+    <option value="20">3:00</option>
+    <option value="21">3:10</option>
+    <option value="22">3:20</option>
+    <option value="23">3:30</option>
+    <option value="24">3:40</option>
+    <option value="25">3:50</option>
+    <option value="26">4:00</option>
+    <option value="27">4:10</option>
+    <option value="28">4:20</option>
+    <option value="29">4:30</option>
+    <option value="30">4:40</option>
+    <option value="31">5:50</option>
+    <option value="32">6:00</option>
+    <option value="33">6:10</option>
+    <option value="34">6:20</option>
+    <option value="35">6:30</option>
+    <option value="36">6:40</option>
+    <option value="37">6:50</option>
+    <option value="38">7:00</option>
+
+  </select>
+  </center>
+  <center><p><font size=5><u><input type="button" value="music" oneclick="history.back()"></u></font></p></center>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
